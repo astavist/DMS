@@ -1,0 +1,15 @@
+version: '4.19.0'
+services:
+  dmsDB:
+    container_name: dmsDB
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_TCP_PORT=3306
+      - VIRTUAL_PORT=3306
+      - MYSQL_ROOT_PASWORD=12345
+    volumes:
+      - dmsDB:/data/db/dmsDB
+volumes:
+  dmsDB:
