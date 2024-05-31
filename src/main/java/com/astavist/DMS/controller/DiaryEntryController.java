@@ -13,6 +13,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/diary-entries")
+@CrossOrigin(origins = "http://localhost:3000")
 public class DiaryEntryController {
     private final DiaryEntryService diaryEntryService;
 
