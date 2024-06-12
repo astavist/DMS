@@ -23,6 +23,8 @@ public class DiaryEntryManager implements DiaryEntryService {
     private DiaryEntryRepository repository;
     private ModelMapper mapper;
 
+    //TODO: Exception Handlers
+
     public CreateDiaryResponse create(CreateDiaryRequest request) {
         DiaryEntry entry = mapper.map(request,DiaryEntry.class);
         entry.setCreatedDate(LocalDateTime.now());

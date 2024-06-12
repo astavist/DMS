@@ -21,9 +21,11 @@ public class DiaryEntry {
 
     private String title;
 
-    @Column(length = 10000) // Uzun içerikler için
+    @Column(length = 10000)
     private String content;
 
     private LocalDateTime createdDate;
+
+    //TODO:USER
 
 }
