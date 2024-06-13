@@ -1,4 +1,4 @@
-package com.astavist.DMS.configuration;
+package com.astavist.DMS.configuration.ModelMapper;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
